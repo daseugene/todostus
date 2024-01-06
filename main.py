@@ -8,4 +8,4 @@ while True:
     move = int(input("Choose an action(type a number): "))
     # title = input("Print a title of your task: ")
     if move == 1:
-        return.get_tasks()
+        await get_tasks(
