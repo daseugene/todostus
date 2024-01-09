@@ -7,5 +7,10 @@ while True:
 
     move = int(input("Choose an action(type a number): "))
     # title = input("Print a title of your task: ")
-    if move == 1:
-        await get_tasks(
+    def get_tasks():
+        if move == 1:
+            ...
+
+
+    def create_task():
+        ...
