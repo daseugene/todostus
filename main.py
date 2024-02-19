@@ -1,16 +1,24 @@
 import repositories
 
+tasks = []
 
-while True:
-
-    print("1. Get your tasks \n 2. Create new task \n")
-
-    move = int(input("Choose an action(type a number): "))
-    # title = input("Print a title of your task: ")
-    def get_tasks():
-        if move == 1:
-            ...
+def delete_tasks():
+    ...
+def choose_case():
+    print("""1. Add a task
+            2. Get my tasks
+    
+    """)
 
 
-    def create_task():
-        ...
+def add_done_flag_in_task():
+    pass
+
+def get_tasks():
+    print(tasks)
+
+def create_task():
+
+
+if __name__ == "__main__":
+    pass
