@@ -1,5 +1,6 @@
 import sqlite3
 
+
 con = sqlite3.connect("todo.db")
 
 cur = con.cursor()
