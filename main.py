@@ -1,24 +1,17 @@
-
-
-tasks = []
-
-def delete_tasks():
-    pass
-def choose_case():
-    print("""1. Add a task
-            2. Get my tasks
-    
-    """)
-
-
-def add_done_flag_in_task():
-    pass
-
-def get_tasks():
-    print(tasks)
-
-def create_task():
-    pass
+from services import *
 
 if __name__ == "__main__":
-    pass
+    main()
+
+
+while True:
+    choose = input("Введите номер действия: ")
+
+    if choose == "1":
+        get_todo_list()
+
+    elif choose == "2":
+        add_todo_task()
+
+    elif choose == "3":
+        delete_todo_task()
