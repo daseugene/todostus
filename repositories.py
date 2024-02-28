@@ -1,5 +1,8 @@
 import sqlite3
 
+def get_connection():
+    sqlite3.connect("todo.db")
+
 
 con = sqlite3.connect("todo.db")
 cursor = con.cursor()
@@ -14,14 +17,18 @@ def get_tasks():
     return(cursor.execute("SELECT * from tasks"))
 
 def insert_task(title, description):
-    cursor.execute("INSERT INTO tasks VALUES"
+    query = cursor.execute("INSERT INTO tasks VALUES"
                    f"('{title}', '{description}', false)")
-
+    if query == True:
+        return True
+    row_please_row()
 
 
 
 rows = cursor.fetchall()
 
-for row in rows:
-    print(row)
+
+def row_please_row():
+    for row in rows:
+        print(row)
 

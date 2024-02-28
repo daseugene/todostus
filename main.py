@@ -1,7 +1,9 @@
 from services import *
+from repositories import *
 
 if __name__ == "__main__":
     main()
+    get_connection()
 
 
 while True:
@@ -15,3 +17,6 @@ while True:
 
     elif choose == "3":
         delete_todo_task()
+
+    elif choose == "0":
+        break
