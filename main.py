@@ -4,10 +4,6 @@ if __name__ == "__main__":
     create_table()
     main()
 
-
-
-
-
 while True:
     choose = input("Введите номер действия: ")
 
