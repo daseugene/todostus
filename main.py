@@ -17,6 +17,8 @@ while True:
         delete_choosed_tasks()
 
     elif choose == "0":
+
         break
+
     elif choose == "del":
         delete_all()

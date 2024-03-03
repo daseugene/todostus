@@ -22,9 +22,6 @@ def get_todo():
      cursor.execute(q)
      rows = cursor.fetchall()
      lst = rows
-     # print("__________")
-     # print(lst)
-     # print("__________")
      if lst:
          for row in rows:
              print(*row)
@@ -63,7 +60,6 @@ def add_todo_task():
 
 def task_detail():
     num_task = input("Посмотреть детали задачи № ")
-   # value = f"'{num_task}'"
     cursor.execute("SELECT title FROM tasktable WHERE id=?", (num_task,))
     for row in cursor.fetchall():
         print()
@@ -164,4 +160,3 @@ def delete_all():
     print()
     main()
     con.close()
-    sqlite3.connect("todo.db")
