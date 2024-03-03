@@ -1,16 +1,18 @@
 from services import *
-from repositories import *
 
 if __name__ == "__main__":
+    create_table()
     main()
-    get_connection()
+
+
+
 
 
 while True:
     choose = input("Введите номер действия: ")
 
     if choose == "1":
-        get_todo_list()
+        get_todo()
 
     elif choose == "2":
         add_todo_task()
@@ -20,3 +22,5 @@ while True:
 
     elif choose == "0":
         break
+    elif choose == "del":
+        delete_all()
