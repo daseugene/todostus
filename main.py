@@ -14,7 +14,7 @@ while True:
         add_todo_task()
 
     elif choose == "3":
-        delete_todo_task()
+        delete_choosed_tasks()
 
     elif choose == "0":
         break

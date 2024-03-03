@@ -46,7 +46,7 @@
     "Python.repositories.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev"
+    "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="RunManager">
